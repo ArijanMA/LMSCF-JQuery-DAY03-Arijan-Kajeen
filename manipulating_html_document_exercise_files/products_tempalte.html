@@ -321,6 +321,35 @@
 		</div>
 	</div>
 
+
+	<script>
+		$(document).ready(function() {
+			// $(".product-image:eq(0)").css("background-color", "red");
+			// $(".product-image:eq(2)").css("background-color", "green");
+			// $(".product-image:eq(4)").css("background-color", "blue");
+
+
+			$("img[src*='notebook']").parent().css("background-color", "red");
+			$("img[src*='phone']").parent().css("background-color", "green");
+			$("img[src*='tablet']").parent().css("background-color", "blue");
+			});
+		// 	var img = $("img");
+		// 	console.table(img);
+		// 	for (var i = 0; i < colors.length; i++) {
+		// 		colors[i]
+		// 	}
+		// 	var a = $("img").attr("src");
+		// 	console.log(a);
+		// // 	var a = a.substring(0,5);
+		// 	var check = a.includes("notebook");
+		// 	console.log(check);
+
+		// 	if ( a.includes("notebook")) {
+		// 		$(".product-image").css("background-color","red");
+		// 	}  
+		
+	</script>
+
 </body>
 </html>
 
