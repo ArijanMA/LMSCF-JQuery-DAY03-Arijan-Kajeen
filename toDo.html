@@ -3,26 +3,43 @@
 <head>
 	<title>to do</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<style>
+		button{
+			height: 20px;
+			width: 40px;
+		}
+	</style>
 </head>
 <body>
-	<div>Zähne waschen</div>
-	<div>Pijama anziehen</div>
-	<div>Milch trinken</div>
-	<div>zum Bed gehen</div>
-	<div>schlafen</div>
+	<ul>
+		<li>Zähne waschen</li>
+		<li>Milch trinken</li>
+		<li>Pijama anziehen</li>
+		<li>zum Bed gehen</li>
+		<li>schlafen</li>
+	</ul>
+	<input type="" name="" value="">
+	<button type="">add</button>
 
 
 	<script>
-		  $(document).ready(function() {
-        $('div').on('click', function() {
-                $(this).animate({
-                        opacity: 0.0,
-                        paddingLeft: '+=80'
-                    }, 500, function() {
-                        $(this).remove();
-                    });
-                });
-        });
+		$(document).ready(function() {
+			 $("button").click(function(){
+	        	var a = $("input").val();
+	        	console.log(a);
+	        	$("ul").append("<li>"+a+"</li>");
+	        
+	        $('li').on('click', function() {
+	                $(this).animate({
+	                        opacity: 0.0,
+	                        paddingLeft: '+=80'
+	                    }, 500, function() {
+	                        $(this).remove();
+	                    });
+	            });
+	      	});
+	       
+	  });      
 	</script>
 </body>
 </html>
